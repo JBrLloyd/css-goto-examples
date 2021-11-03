@@ -1,0 +1,41 @@
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+html, body, .wrapper {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background: #09042A;
+}
+
+.circle {
+    position: fixed;
+    width: 150px;
+    height: 150px;
+    top: 50px;
+    border-radius: 50%;
+}
+
+.first {
+    left: 75px;
+    background: #7B3F61;
+}
+
+.second {
+    left: 175px;
+    transition:1s;
+    background: 
+        radial-gradient(farthest-side,#09042A 99%,transparent) 
+        75px 50px/ /* position */
+        150px 150px /* size*/
+        no-repeat fixed  #E78481;
+}
+
+body:hover .second {
+    left:50px;
+}
